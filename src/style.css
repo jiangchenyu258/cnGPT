@@ -78,3 +78,19 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.arco-trigger-popup[type="chat-drop"] .arco-dropdown {
+  width: 269px;
+}
+
+.arco-trigger-popup[type="chat-drop"] .arco-dropdown-option:hover {
+  color: #ffffff !important;
+  background: #0d45a1 !important;
+}
+
+.input[type="chat-input"] .arco-input-wrapper {
+  height: 66px;
+  background: #ffffff;
+  border: 2px solid #e1e1e1;
+  border-radius: 33px;
+}
