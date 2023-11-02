@@ -1,11 +1,24 @@
 import { createRouter, createWebHistory } from "vue-router";
-import routerConfig from "../interface/routerInterface";
 
-const routes: routerConfig[] = [
+const routes: any[] = [
   {
     path: "/",
-    name: "index",
-    component: () => import("../Index.vue"),
+    redirect: "/chat",
+  },
+  {
+    path: "/chat",
+    name: "chat",
+    component: () => import("../components/Chat.vue"),
+  },
+  {
+    path: "/paint",
+    name: "paint",
+    component: () => import("../components/Paint.vue"),
+  },
+  {
+    path: "/recharge",
+    name: "recharge",
+    component: () => import("../components/Recharge.vue"),
   },
 ];
 
