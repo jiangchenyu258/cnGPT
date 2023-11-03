@@ -20,4 +20,16 @@ export default defineConfig({
       ],
     }),
   ],
+  server: {
+    proxy: {
+      "^/api": {
+        target: "http://test.xsbmxt.com/ygcn",
+        changeOrigin: true,
+        secure: false,
+        rewrite: (path) => {
+          return path.replace("/^/api/", "");
+        },
+      },
+    },
+  },
 });

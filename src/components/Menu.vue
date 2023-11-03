@@ -27,12 +27,27 @@
   </div>
 </template>
 <script setup lang="ts">
-import { ref } from "vue";
-import { useRouter } from "vue-router";
+import { ref, watch } from "vue";
+import { useRouter, useRoute } from "vue-router";
 
 const key = ref(0);
 
 const router = useRouter();
+
+const route = useRoute();
+
+watch(
+  () => route.path,
+  (newRoute) => {
+    if (newRoute === "/chat") {
+      key.value = 0;
+    } else if (newRoute === "/paint") {
+      key.value = 1;
+    } else {
+      key.value = 2;
+    }
+  }
+);
 
 const clickHandle = (keyNumber: number, path: string) => {
   key.value = keyNumber;

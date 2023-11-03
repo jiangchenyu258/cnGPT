@@ -47,7 +47,11 @@
 
 <script setup lang="ts">
 import { ref, reactive } from "vue";
+import { get } from "../request/http";
 
+get("/api/token/package/list").then((res) => {
+  console.log(res);
+});
 const recordKey = ref(0);
 
 const columns = [
