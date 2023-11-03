@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 const routes: any[] = [
   {
     path: "/",
-    redirect: "/chat",
+    redirect: "/m/chat",
   },
   {
     path: "/chat",
@@ -19,6 +19,16 @@ const routes: any[] = [
     path: "/recharge",
     name: "recharge",
     component: () => import("../components/Recharge.vue"),
+  },
+  {
+    path: "/m/chat",
+    name: "MobileChat",
+    component: () => import("../components/mobile/chat.vue"),
+  },
+  {
+    path: "/m/menu",
+    name: "MobileMenu",
+    component: () => import("../components/mobile/menu.vue"),
   },
 ];
 

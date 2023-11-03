@@ -1,9 +1,13 @@
 <script setup lang="ts">
+import { ref } from "vue";
 import Index from "./Index.vue";
+
+const isMobile = ref(true);
 </script>
 
 <template>
-  <div class="main-page">
+  <router-view v-if="isMobile"></router-view>
+  <div v-else class="main-page">
     <Index></Index>
   </div>
 </template>
