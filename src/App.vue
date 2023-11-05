@@ -17,4 +17,7 @@ const isMobile = ref(true);
   width: 100vw;
   height: 100vh;
 }
+.arco-select-dropdown {
+  background-color: #131313 !important;
+}
 </style>

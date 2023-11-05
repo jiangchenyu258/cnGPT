@@ -16,7 +16,7 @@
           src="../../assets/mobile/menu.png"
           width="14"
           height="11"
-          @click="$router.push({ name: 'MobileMenu' })"
+          @click="$router.replace({ path: '/' })"
         />
         <span style="flex: 1; font-size: 12px; color: #ffffff">聊天</span>
       </div>

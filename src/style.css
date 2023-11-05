@@ -20,6 +20,7 @@
   word-break: break-all;
   font-weight: 400;
   color: #ffffff;
+  list-style: none;
 }
 
 #app {
