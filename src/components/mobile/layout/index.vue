@@ -17,6 +17,9 @@ import TopHeader from "./components/header.vue";
 
 <style scoped>
 .page {
+  font-weight: 400;
+  color: #ffffff;
+  list-style: none;
   --font-color: #ffffff;
   --background-color: #000000;
   --border-color: #4c4c4c;

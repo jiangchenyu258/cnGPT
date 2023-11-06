@@ -140,7 +140,7 @@ const clickHandle = (key: number) => {
   width: 34px;
   height: 34px;
   margin-top: 10px;
-  background: url("../assets/image/chongzhi small.png") no-repeat 100% 100%;
+  background: url("../../assets/image/chongzhi small.png") no-repeat 100% 100%;
   background-size: contain;
   vertical-align: text-bottom;
 }

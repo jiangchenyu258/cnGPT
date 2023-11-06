@@ -433,7 +433,7 @@ const styleClickHandle = (key: number) => {
   width: 20px;
   height: 20px;
   transform: translateY(-50%);
-  background: url("../assets/image/info.png") no-repeat 100% 100%;
+  background: url("../../assets/image/info.png") no-repeat 100% 100%;
   background-size: contain;
 }
 .version-select:deep(.arco-input-number) {
@@ -543,7 +543,7 @@ const styleClickHandle = (key: number) => {
   display: inline-block;
   width: 24px;
   height: 22px;
-  background: url("../assets/image/img.png") no-repeat 100% 100%;
+  background: url("../../assets/image/img.png") no-repeat 100% 100%;
   background-size: contain;
   vertical-align: middle;
 }
@@ -560,7 +560,7 @@ const styleClickHandle = (key: number) => {
 .my-paint-info {
   width: 20px;
   height: 20px;
-  background: url("../assets/image/info.png") no-repeat 100% 100%;
+  background: url("../../assets/image/info.png") no-repeat 100% 100%;
   background-size: contain;
   margin-left: 20px;
   margin-top: 2px;
@@ -593,7 +593,7 @@ const styleClickHandle = (key: number) => {
   display: inline-block;
   width: 21px;
   height: 21px;
-  background: url("../assets/image/形状15.png") no-repeat 100% 100%;
+  background: url("../../assets/image/形状15.png") no-repeat 100% 100%;
   background-size: contain;
   vertical-align: middle;
 }

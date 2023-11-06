@@ -1,6 +1,7 @@
+import { isMobile } from "../assets/utils/platform";
 import { createRouter, createWebHistory } from "vue-router";
 
-const routes: any[] = [
+const pRoutes = [
   {
     path: "/",
     redirect: "/chat",
@@ -8,17 +9,17 @@ const routes: any[] = [
   {
     path: "/chat",
     name: "chat",
-    component: () => import("../components/Chat.vue"),
+    component: () => import("../components/pc/Chat.vue"),
   },
   {
     path: "/paint",
     name: "paint",
-    component: () => import("../components/Paint.vue"),
+    component: () => import("../components/pc/Paint.vue"),
   },
   {
     path: "/recharge",
     name: "recharge",
-    component: () => import("../components/Recharge.vue"),
+    component: () => import("../components/pc/Recharge.vue"),
   },
 ];
 
@@ -76,7 +77,7 @@ const mRoutes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: mRoutes,
+  routes: isMobile() ? mRoutes : pRoutes,
 });
 
 export default router;

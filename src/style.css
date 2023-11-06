@@ -13,14 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   word-break: break-all;
-  font-weight: 400;
-  color: #ffffff;
-  list-style: none;
 }
 
 #app {
@@ -35,9 +33,11 @@
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }

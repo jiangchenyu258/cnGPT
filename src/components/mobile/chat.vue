@@ -227,6 +227,7 @@
           "
         >
           <input
+            v-model="keyWord"
             type="text"
             placeholder="请提出你的问题"
             style="
@@ -238,7 +239,12 @@
               background-color: transparent;
             "
           />
-          <img src="../../assets/mobile/send.png" width="18" height="16" />
+          <img
+            src="../../assets/mobile/send.png"
+            width="18"
+            height="16"
+            @click="onSendMessage"
+          />
         </div>
       </div>
     </footer>
@@ -317,7 +323,7 @@ const chatList = reactive([
   },
 ]);
 //
-const value = ref("");
+const keyWord = ref("");
 
 // 头部button切换
 const onButtonChange = (prop) => {
@@ -330,8 +336,8 @@ const onActionChange = (prop) => {
   actionCurrent.value = prop;
 };
 //
-const change = (e) => {
-  console.log("change", e);
+const onSendMessage = (e) => {
+  console.log("change", keyWord.value);
 };
 </script>
 

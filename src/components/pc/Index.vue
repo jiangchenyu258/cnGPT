@@ -5,12 +5,12 @@
   </div>
 </template>
 <script setup lang="ts">
-import MenuView from "./components/Menu.vue";
+import MenuView from "../Menu.vue";
 </script>
 <style scoped>
 .index-page {
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 </style>

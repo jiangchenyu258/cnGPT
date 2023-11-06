@@ -2,7 +2,7 @@
   <div class="chat-container">
     <div class="list">
       <div v-for="item in list" key="item.key" class="list-item">
-        <img src="../assets/image/形状 9 拷贝.png" class="chat-icon" />
+        <img src="../../assets/image/形状 9 拷贝.png" class="chat-icon" />
         <p class="list-title">{{ item.title }}</p>
       </div>
     </div>
@@ -100,7 +100,7 @@
 
 <script setup lang="ts">
 import { reactive, ref } from "vue";
-import chatList from "../interface/chatListInterface";
+import chatList from "../../interface/chatListInterface";
 
 const list: chatList[] = reactive([
   {
@@ -232,13 +232,13 @@ const getMessageClasses = (sender: any) => {
   display: inline-block;
   width: 26px;
   height: 23px;
-  background: url("../assets/image/chat_a.png") no-repeat 100% 100%;
+  background: url("../../assets/image/chat_a.png") no-repeat 100% 100%;
   vertical-align: middle;
   margin-right: 12px;
   background-size: contain;
 }
 .design-icon {
-  background: url("../assets/image/zhushou_a.png") no-repeat 100% 100%;
+  background: url("../../assets/image/zhushou_a.png") no-repeat 100% 100%;
   background-size: contain;
 }
 
@@ -248,24 +248,24 @@ const getMessageClasses = (sender: any) => {
 }
 
 .button-icon-active {
-  background: url("../assets/image/chat_b.png") no-repeat 100% 100%;
+  background: url("../../assets/image/chat_b.png") no-repeat 100% 100%;
   background-size: contain;
 }
 .design-icon-active {
-  background: url("../assets/image/zhushou_b.png") no-repeat 100% 100%;
+  background: url("../../assets/image/zhushou_b.png") no-repeat 100% 100%;
   background-size: contain;
 }
 .down-icon {
   display: inline-block;
   width: 16px;
   height: 9px;
-  background: url("../assets/image/形状6-2.png") no-repeat 100% 100%;
+  background: url("../../assets/image/形状6-2.png") no-repeat 100% 100%;
   vertical-align: middle;
   background-size: contain;
   margin-left: 27px;
 }
 .down-icon-active {
-  background: url("../assets/image/形状6.png") no-repeat 100% 100%;
+  background: url("../../assets/image/形状6.png") no-repeat 100% 100%;
   background-size: contain;
 }
 .new-chat-button {
@@ -285,7 +285,7 @@ const getMessageClasses = (sender: any) => {
   display: inline-block;
   width: 27px;
   height: 24px;
-  background: url("../assets/image/形状22.png") no-repeat 100% 100%;
+  background: url("../../assets/image/形状22.png") no-repeat 100% 100%;
   vertical-align: middle;
   margin-right: 12px;
   background-size: contain;
@@ -372,7 +372,7 @@ const getMessageClasses = (sender: any) => {
 .bot-image {
   width: 70px;
   height: 67px;
-  background: url("../assets/image/图层 2.png") no-repeat 100% 100%;
+  background: url("../../assets/image/图层 2.png") no-repeat 100% 100%;
   background-size: contain;
 }
 
@@ -383,7 +383,7 @@ const getMessageClasses = (sender: any) => {
 .send-icon {
   width: 66px;
   height: 66px;
-  background: url("../assets/image/send.png") no-repeat 100% 100%;
+  background: url("../../assets/image/send.png") no-repeat 100% 100%;
   border-radius: 50%;
   background-size: contain;
   cursor: pointer;
@@ -393,7 +393,7 @@ const getMessageClasses = (sender: any) => {
   width: 41px;
   height: 41px;
   margin-right: 12px;
-  background: url("../assets/image/组 25.png") no-repeat 100% 100%;
+  background: url("../../assets/image/组 25.png") no-repeat 100% 100%;
   border-radius: 10px;
   background-size: contain;
   cursor: pointer;
@@ -410,12 +410,12 @@ const getMessageClasses = (sender: any) => {
 }
 
 .create-word {
-  background: url("../assets/image/组 26.png") no-repeat 100% 100%;
+  background: url("../../assets/image/组 26.png") no-repeat 100% 100%;
   background-size: contain;
 }
 
 .create-pdf {
-  background: url("../assets/image/组 27.png") no-repeat 100% 100%;
+  background: url("../../assets/image/组 27.png") no-repeat 100% 100%;
   background-size: contain;
 }
 

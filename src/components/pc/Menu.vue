@@ -5,24 +5,24 @@
       :class="{ active: key === 0 }"
       @click="clickHandle(0, '/chat')"
     >
-      <img src="../assets/image/01.png" class="icon-image" />
+      <img src="../../assets/image/01.png" class="icon-image" />
     </div>
     <div
       class="image-container"
       :class="{ active: key === 1 }"
       @click="clickHandle(1, '/paint')"
     >
-      <img src="../assets/image/03.png" class="icon-image" />
+      <img src="../../assets/image/03.png" class="icon-image" />
     </div>
     <div
       class="image-container"
       :class="{ active: key === 2 }"
       @click="clickHandle(2, '/recharge')"
     >
-      <img src="../assets/image/02.png" class="icon-image" />
+      <img src="../../assets/image/02.png" class="icon-image" />
     </div>
     <div class="image-container exit-icon">
-      <img src="../assets/image/04.png" class="icon-image" />
+      <img src="../../assets/image/04.png" class="icon-image" />
     </div>
   </div>
 </template>
